@@ -17,8 +17,8 @@ chmod +x ./lc3tools_installer_mac
 ```
 
 The following output signals a successful installation: 
-```shell
-<<< lc3tools Installer >>>
+```
+<<< lc3tools Installer of _____ >>>
 
 Installing support libraries...
 Installing flex
@@ -43,7 +43,7 @@ Writing symbol.c
 Writing symbol.h
 
 Configuring environment...
-Configuring for Linux...
+Configuring for ________________...
 Installation directory is /usr/local/bin
 
 Compiling files...

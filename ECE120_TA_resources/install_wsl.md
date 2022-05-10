@@ -118,4 +118,3 @@ Other IDEs like Clion from Jetbrain support WSL function as well. You are free t
 ## **Good luck with setting up WSL!**
 
 ## **It can be a great productivity tool!**
-

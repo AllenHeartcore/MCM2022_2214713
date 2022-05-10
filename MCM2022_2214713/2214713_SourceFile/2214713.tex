@@ -44,13 +44,13 @@
 	
 	\subsection{Literature Review}
 	
-	Thousands of bitcoin and gold price prediction methods have been thoroughly researched by scholars all over the world, whereas only a few of them predict the price based only on historical price data. As for bitcoins, previous research indicated that \textbf{neural networks \cite{NN} and time series models \cite{TSA} are mostly used in the past five years. However, the biggest challenge is that these models can either predict the bitcoin price ahead of only a short time, or make a long-term prediction with unsatisfying accuracy. Additionally, for now, nearly no scholar has researched bitcoin prediction with short-term historical data. We innovatively tackle the problem by (1) developing \textbf{Gray Models} on short-term data and (2) combining different algorithms during various stages in the time series to achieve both long-term and short-term prediction. 
+	Thousands of bitcoin and gold price prediction methods have been thoroughly researched by scholars all over the world, whereas only a few of them predict the price based only on historical price data. As for bitcoins, previous research indicated that \textbf{neural networks} \cite{NN} and \textbf{time series models} \cite{TSA} are mostly used in the past five years. However, the biggest challenge is that these models can either predict the bitcoin price ahead of only a short time, or make a long-term prediction with unsatisfying accuracy. Additionally, for now, nearly no scholar has researched bitcoin prediction with short-term historical data. We innovatively tackle the problem by (1) developing \textbf{Gray Models} on short-term data and (2) combining different algorithms during various stages in the time series to achieve both long-term and short-term prediction. 
 	
-	As for the allocation of our capital into different assets, one of the most famous theories is \textbf{CAPM} (Capital Asset Pricing Model). The model tells us how to appraise the asset based on its risk and yield rate. The key point of CAPM is to explore the quantitative relationship between profit and risk -- that is, how much profit investors would get while compensating for a certain degree of risk. 
+	As for the allocation of our capital into different assets, one of the most famous theories is \textbf{CAPM} (Capital Asset Pricing Model). The model tells us how to appraise the asset based on its risk and yield rate. Its key point is to explore the quantitative relationship between profit and risk -- that is, how much profit investors would get while compensating for a certain degree of risk. 
 	
 	\subsection{Problem Restatement and Our Approach}
 	
-	For this problem, we are offered two datasets containing prices of bitcoin and gold. Our target is to develop a model to help traders decide whether to buy, hold, or sell their assets each day based solely on data from previous days. The requirements can be broken down as follows:
+	For this problem, we are offered two datasets containing the prices of bitcoin and gold. Our target is to develop a model to help traders decide whether to buy, hold, or sell their assets each day based solely on data from previous days. The requirements can be broken down as follows:
 	\begin{enumerate}
 		\item[$\bullet$] Construct a model based only on past data series to determine the best trading strategy. 
 		\item[$\bullet$] Prove that the proposed method yields the best strategy.
@@ -65,7 +65,7 @@
 	\end{enumerate}
 
 	\begin{figure}[h]
-		\centering \includegraphics[width=11.6cm]{GlobalFlowChart}
+		\centering \includegraphics[width=12cm]{GlobalFlowChart}
 		\caption{Flow chart of the complete problem analyzing and solving process}
 	\end{figure}
 	
@@ -119,7 +119,7 @@
 			$\beta_{x}$ & Weight coefficients in expected profit rate ($x = 1,2,3$) & \\
 			$\rho$ & Correlation coefficient of gold and bitcoin prices & \\
 			$r$ & Investor's Vulnerability Index: lower $r$ means higher risk tolerance & \\
-			$\omega$ & Balance Ratio: ratio of money invested in gold to bitcoin & \\
+			$\omega$ & Balance Ratio: portion of gold in the total asset (gold \& bitcoin) & \\
 			$K$ & Sharp Ratio: ratio of profit (by appreciation) to risk (by stdev) & \\
 			$\textbf{\textrm{X}}_{opt}$ & The optimal value of the variable $\textbf{\textrm{X}}$ & \\
 			\bottomrule
@@ -148,7 +148,7 @@
 	
 	Some model selection is performed in this process. GM(1,1) PDF, GM(2,1) PDF, and GM(2,1) MWF-7 goes into the negative region when predicting bitcoin prices, and GM(1,1) MWF-7 fails to run on gold prices. But the available GMs are sufficient for use: the absolute error rates are 5.209258±4.153883\%, 4.496556±3.178538\%, and 3.578030±3.799295\%, respectively. GM(1,1) model sketches the general trend of the series, while GM(2,1) depicts the shape with more details. 
 	
-	Nonetheless, as the zoomed part indicates, GM is not free from the time lag. The largest obstacle in incorporating GM is its restrictions in the varying rates of data: it works best on exponentially growing data and worst on acutely fluctuating data. To some extent, this time lag is caused by the ``momentum'' of growth -- a closer examination on the error rates reveals that the prediction most severely deviates from the actual value at sharp turning points. Yet this hardly affects GM's pragmatic value: sharp turns usually originate from spontaneous mass trading (with the absence of a ``circuit breaker'') not represented in historical prices. 
+	Nonetheless, as the zoomed part indicates, GM is not free from the time lag. The largest obstacle in incorporating GM is its restrictions on the varying rates of data: it works best on exponentially growing data and worst on acutely fluctuating data. To some extent, this time lag is caused by the ``momentum'' of growth -- a closer examination on the error rates reveals that the prediction most severely deviates from the actual value at sharp turning points. Yet this hardly affects GM's pragmatic value: sharp turns usually originate from spontaneous mass trading (with the absence of a ``circuit breaker'') not represented in historical prices. 
 	
 	\subsection{Latter Stage, Short-Term: Time Series Analysis (ARIMA)}
 	\label{sec:3.1}
@@ -416,7 +416,7 @@
 	
 	In terms of training data, \textbf{past data fitting} (PDF) is useful for suppressing outliers by focusing on predicting the trend from the entire set of historical data. However, the program runs slowlier as real-world data accumulates; besides, many neural networks do not accept a varied number of inputs, and \textbf{moving window fitting} (MWF) is introduced to counteract these side effects. Carefully weighing the pros and cons, we use \textbf{GM(1,1) PDF} for the first 10\% short-term predictions with insufficient data, and \textbf{MLP MWF-15} (member of the neural network family) for the other 90\% long-term predictions. 
 	
-	There is also evidence of our \textbf{decision model} outperforming other candidates. \textbf{CAPM} is widely regarded as one of the best strategies to guide investors to allocate their capital. Calculating the sharp rate $K$ allows inventors to determine the ideal asset-to-asset ratio. CAPM model shows a strong robustness, performing well with different commission fee rates $\alpha$ and weight coefficients $\beta$ in the expected return rate. 
+	There is also evidence of our \textbf{decision model} outperforming other candidates. \textbf{CAPM} is widely regarded as one of the best strategies to guide investors to allocate their capital. Calculating the sharp rate $K$ allows inventors to determine the ideal asset-to-asset ratio. CAPM model shows strong robustness, performing well with different commission fee rates $\alpha$ and weight coefficients $\beta$ in the expected return rate. 
 	
 	An alternative approach is pure \textbf{Linear Programming} -- although one-variable LinProg assists CAPM at closed market days, two-variable LinProg completely replaces CAPM in this approach: 
 	
