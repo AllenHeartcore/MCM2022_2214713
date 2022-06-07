@@ -1,6 +1,6 @@
 # WSL, A Substitution for VirtualBox
 
-*This note on setting up the Windows Subsystem for Linux (WSL) environment, with some minor modifications, is originally written by Haozhe Chen, a former TA from the ECE220 course.*
+*This note on setting up the Windows Subsystem for Linux (WSL) environment, with some minor modifications, is originally written by Haozhe Chen, a former TA of ECE220.*
 
 ## **What is WSL?**
 
