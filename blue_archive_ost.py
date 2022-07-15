@@ -11,7 +11,7 @@ dest_folder = 'blue_archive_ost/'
 album = 'Blue Archive OST'
 
 def download(url, folder='./', filename=None):
-    from urllib.request import urlopen
+    if not folder.endswith('/'): folder += '/'
     if filename is None: filename = url[:url.find('?')].split('/')[-1]
     with open(folder + filename, 'wb') as dest:
         dest.write(urlopen(url).read())
