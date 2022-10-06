@@ -8,7 +8,7 @@ ZJUI 2020级电子与计算机工程 **陈志榕** CHEN Zhirong
 
 ZJUI 2020级电子与计算机工程 **马梓诚** MA Zicheng
 
-![TeamPhoto1](Resources/Team_2214713_Photo1.jpg)
+![TeamPhoto1](resources/Team_2214713_Photo1.jpg)
 
 </br>
 
@@ -29,13 +29,13 @@ ZJUI 2020级电子与计算机工程 **马梓诚** MA Zicheng
 - 细节考虑周全：训练样本来源（所有历史数据 vs. 移动窗口）、黄金休市日……
 - 应用部署灵活：适应各种投资者偏好（眼光、风险承受能力）【**创新点**！过往的论文中并没有很多研究】
 
-![FlowChart](2214713_SourceFile/Images/GlobalFlowChart.png)
+![FlowChart](source/Images/GlobalFlowChart.png)
 
 </br>
 
 ## **团队攻坚的经历**
 
-比赛前的寒假，团队进行了为期一个月的准备。队员们研读《Python数学实验与建模》以熟悉各种模型，每四天开一次线上会议探讨困惑，到寒假结束时，队员们基本学会并用Python**实现了美赛中常见的模型**，陈梓源还将课本中提及的12大类、63个模型包装成易于调用的[接口](Resources/python_math_modelling_api.py)。同时，我们还**学习了LaTex的使用方法**，对写作部分的技巧和细节进行了一定程度的学习。比赛开始前夕，团队还专门开了个小会，确定好美赛四天的时间分配和各人负责的模块，我们相信充分的准备和明确的分工是美赛取得佳绩的关键。
+比赛前的寒假，团队进行了为期一个月的准备。队员们研读《Python数学实验与建模》以熟悉各种模型，每四天开一次线上会议探讨困惑，到寒假结束时，队员们基本学会并用Python**实现了美赛中常见的模型**，陈梓源还将课本中提及的12大类、63个模型包装成易于调用的[接口](resources/python_math_modelling_api.py)。同时，我们还**学习了LaTex的使用方法**，对写作部分的技巧和细节进行了一定程度的学习。比赛开始前夕，团队还专门开了个小会，确定好美赛四天的时间分配和各人负责的模块，我们相信充分的准备和明确的分工是美赛取得佳绩的关键。
 
 这道题目的主要任务是“根据黄金和比特币过去五年的价格给出最佳交易策略”。今年的C题与往年有一个很大的不同，那就是数据量大大减少：往年会给数万条不同形式的数据，这次只给了总计三千条相对单一的数据（两种资产的五年历史价格），而且题目不允许参考外部数据，也就是说**手头的信息变少了**。**如何挖掘数据背后的信息**成为了能否脱颖而出的关键。我们小组对于数据特征的提取下了一番功夫，设置了非常多的不同指标，同时利用“滑窗”对特征信息进行不同时间段长度的提取和筛选、
 
@@ -53,7 +53,7 @@ ZJUI 2020级电子与计算机工程 **马梓诚** MA Zicheng
     - 既保证了相对明确的分工，尽量发挥队员的长处，
     - 又可以确保团队能够及时高效、从容不迫地化解困难。
 
-![TeamPhoto2](Resources/Team_2214713_Photo3.jpg)
+![TeamPhoto2](resources/Team_2214713_Photo3.jpg)
 
 </br>
 
@@ -81,7 +81,7 @@ ZJUI 2020级电子与计算机工程 **马梓诚** MA Zicheng
 - 一定要熟悉写作、排版相关软件，最好提前准备好模板。美赛的写作排版也是获得好成绩至关重要的一环，可以多多了解一些小工具和帮助写作的网站，会大大提高效率。
 - 比赛中提前制定好大致时间线（选题半天、预测模型一天、决策模型一天半、论文润色一天），尽量按照时间线走流程，另外要留下充足的时间对论文进行润色和修改。
 
-![TeamPhoto3](Resources/Team_2214713_Photo4.jpg)
+![TeamPhoto3](resources/Team_2214713_Photo4.jpg)
 
 ## **Advice from Prof. Thomas Honold**
 
@@ -90,7 +90,7 @@ ZJUI 2020级电子与计算机工程 **马梓诚** MA Zicheng
     - Look at [previous years' problems](https://www.comap.com/undergraduate/contests/mcm/previous-contests.php).
     - There is a related math modeling contest for high school students
     called [M3 Challenge](https://m3challenge.siam.org/resources) and administered by SIAM. They have two nice booklets with basic information about [math modeling](https://m3challenge.siam.org/sites/default/files/uploads/siam-guidebook-final-press.pdf) and [presenting contest solutions](https://m3challenge.siam.org/sites/default/files/uploads/siam-technical-guidebook-web.pdf). 
-    - Continuous modeling is often done with differential equations, and our MATH286 textbook has a [brief introduction](Resources/boyce-diffeq-txtbk-modelling-excerpt.pdf) to such modeling. 
+    - Continuous modeling is often done with differential equations, and our MATH286 textbook has a [brief introduction](resources/boyce-diffeq-txtbk-modelling-excerpt.pdf) to such modeling. 
     - A former ZJUI student, Lin Hangzheng, has won the Outstanding Winner and Informs Awards with his team at MCM/ICM a few years ago. You can find his [prize-winning paper](https://www.hangzheng.info/files/mcmthesis-demo.pdf) on his webpage. 
 - Technical issues
     - ***Pay attention to the difference between US Eastern and China time.*** The problems will appear on the [official website](https://www.comap.com/undergraduate/contests/mcm) at 6 a.m. GMT+8 on the first day of the contest. 
