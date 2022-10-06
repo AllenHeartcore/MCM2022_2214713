@@ -86,19 +86,19 @@ ZJUI 2020级电子与计算机工程 **马梓诚** MA Zicheng
 ## **Advice from Prof. Thomas Honold**
 
 - Study for the contest
-    - Read the [contest rules](https://www.comap.com/undergraduate/contests/mcm/instructions.php) and [accompanying tips](https://www.comap.com/undergraduate/contests/mcm/flyer/MCM-ICM_Tips.pdf) in detail.
-    - Look at [previous years' problems](https://www.comap.com/undergraduate/contests/mcm/previous-contests.php).
+    - Read the [contest rules](https://contest.comap.com/undergraduate/contests/mcm/instructions.php) and [accompanying tips](https://contest.comap.com/undergraduate/contests/mcm/flyer/MCM-ICM_Tips.pdf) in detail.
+    - Look at [previous years' problems](https://contest.comap.com/undergraduate/contests/mcm/previous-contests.php).
     - There is a related math modeling contest for high school students
     called [M3 Challenge](https://m3challenge.siam.org/resources) and administered by SIAM. They have two nice booklets with basic information about [math modeling](https://m3challenge.siam.org/sites/default/files/uploads/siam-guidebook-final-press.pdf) and [presenting contest solutions](https://m3challenge.siam.org/sites/default/files/uploads/siam-technical-guidebook-web.pdf). 
     - Continuous modeling is often done with differential equations, and our MATH286 textbook has a [brief introduction](resources/boyce-diffeq-txtbk-modelling-excerpt.pdf) to such modeling. 
     - A former ZJUI student, Lin Hangzheng, has won the Outstanding Winner and Informs Awards with his team at MCM/ICM a few years ago. You can find his [prize-winning paper](https://www.hangzheng.info/files/mcmthesis-demo.pdf) on his webpage. 
 - Technical issues
-    - ***Pay attention to the difference between US Eastern and China time.*** The problems will appear on the [official website](https://www.comap.com/undergraduate/contests/mcm) at 6 a.m. GMT+8 on the first day of the contest. 
+    - ***Pay attention to the difference between US Eastern and China time.*** The problems will appear on the [official website](https://contest.comap.com/undergraduate/contests/mcm) at 6 a.m. GMT+8 on the first day of the contest. 
     - There are numerous rules regarding the format and submission of the solution. To name a few: 
         - There is now a **25 page limit** for the solution (introduced in 2021)
-        - You need to submit a **summary sheet**, for which a template is provided ([Word](https://www.comap.com/undergraduate/contests/mcm/flyer/MCM-ICM_Summary.docx), [LaTeX](https://www.comap.com/undergraduate/contests/mcm/flyer/MCM-ICM_Summary.tex))
+        - You need to submit a **summary sheet**, for which a template is provided ([Word](https://contest.comap.com/undergraduate/contests/mcm/flyer/MCM-ICM_Summary.docx), [LaTeX](https://contest.comap.com/undergraduate/contests/mcm/flyer/MCM-ICM_Summary.tex))
         - No identifying information of yourself may appear in the solution other than the team control number. Specially, close the memorandom with "**Sincerely, Team 2214713**" or something similar. 
-        - Don't miss any detail under the heading "After     the Contest - Submitting a Solution Document" in the [contest instructions](https://www.comap.com/undergraduate/contests/mcm/instructions.php#VI). 
+        - Don't miss any detail under the heading "After     the Contest - Submitting a Solution Document" in the [contest instructions](https://contest.comap.com/undergraduate/contests/mcm/instructions.php#VI). 
     - Get a few hours of **good sleep** during the nights, and submit only in the morning. One mistyped keystroke at the end of an exhausting day can render the solution useless! 
 
 ### **祝备赛好运！**
