@@ -1,0 +1,215 @@
+\documentclass{beamer}
+\usetheme{Goettingen}
+\usecolortheme{sidebartab}
+\usepackage{hyperref}
+
+
+\makeatletter
+\makeatother
+\title{Experience in MCM2022}
+\author{Zhirong Chen, Ziyuan Chen}
+\institute{ZJUI Institute}
+\date{2023/2/10}
+
+
+\AtBeginSection[] {
+    \begin{frame}
+        \frametitle{Table of Contents}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+
+\begin{document}
+
+
+\frame{\titlepage}
+\begin{frame}
+    \frametitle{Contents}
+    \begin{itemize}
+        \setlength{\itemsep}{20pt}
+        \setlength{\parsep}{6pt}
+        \setlength{\parskip}{3pt}
+        \item Preparation
+        \item During the Contest
+        \item Paper Writing
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Introduction}
+    \framesubtitle{Capacity}
+    \begin{itemize}
+        \setlength{\itemsep}{7pt}
+        \item Team Working
+        \begin{itemize}
+            \item Tip: 80\% + 20\%
+        \end{itemize}
+        \item Mathematical Thinking
+        \item Paper Writing
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Preparation}
+    \framesubtitle{What should you do?}
+    \begin{enumerate}
+        \item Read through any mathematical modeling book
+        \begin{itemize}
+            \item \textit{Python Mathematical Experiment and Modeling}
+            \item "Writing the MCM paper correctly"
+            \item ...
+        \end{itemize}
+        \item Useful python libraries
+        \begin{itemize}
+            \item \textbf{Data Processing:} pandas, statsmodels
+            \item \textbf{Modelling:} scipy, sympy
+            \item \textbf{Machine Learning:} sklearn, pytorch
+            \item \textbf{Data Visualization:} matplotlib, seaborn
+        \end{itemize}
+        \item Try to learn \LaTeX
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Preparation}
+    \framesubtitle{What's next?}
+    \begin{enumerate}
+        \setlength{\itemsep}{5pt}
+        \item Traditional Modelling Algorithms
+        \begin{itemize}
+            \setlength{\itemsep}{5pt}
+            \item analytic hierarchy process
+            \item PCA (principal component analysis)
+        \end{itemize}
+        \item{Advanced Modelling Algorithms}
+        \begin{itemize}
+            \setlength{\itemsep}{5pt}
+            \item ant colony algorithm
+            \item genetic algorithm
+        \end{itemize}
+        \item Paper Writing Skill
+    \end{enumerate}
+    \alert{Attention: Don't use too many neural networks in your model}, because
+    \begin{enumerate}
+        \item they usually don't have good interpretability
+        \item sometimes they are not suitable for the data
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{During the Contest}
+    \framesubtitle{\textit{The} Three Pillars}
+    \begin{itemize}
+        \setlength{\itemsep}{5pt}
+        \item Modeling
+        \item Coding
+        \item Writing
+    \end{itemize}
+    \vspace{20pt}
+    \begin{itemize}
+        \setlength{\itemsep}{5pt}
+        \item Be sure to help each other out
+        \item ...
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{During the Contest}
+    \framesubtitle{Our solution}
+    \begin{itemize}
+        \setlength{\itemsep}{5pt}
+        \item \textbf{Ziyuan Chen:} Prediction, \textit{Visualization}, Paper Writing
+        \item \textbf{Zhirong Chen:} Decision I (CAPM), \textit{Parameter Tuning}
+        \item \textbf{Zicheng Ma:} Decision II (LinProg), \textit{Sensitivity Analysis}
+    \end{itemize}
+    \vspace{20pt}
+    \begin{itemize}
+        \setlength{\itemsep}{5pt}
+        \item Be sure to help each other out
+        \item and be \textbf{prepared} to help each other out
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{During the Contest}
+    \framesubtitle{Prepare for the unexpected}
+    \begin{itemize}
+        \setlength{\itemsep}{10pt}
+        \item We don't know much about \textit{finance}
+        \begin{itemize}
+            \item or technically every possible topic
+        \end{itemize}
+        \item When \href{https://www.mathmodels.org/Problems/2022/MCM-C/2022_Problem_C_DATA.zip}{data} runs out (yeah, it happens)
+        \begin{itemize}
+            \item and \textbf{37\%} of all teams choose the same problem......
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Paper Writing}
+    \begin{itemize}
+        \setlength{\itemsep}{10pt}
+        \item \LaTeX $\textrm{ }$ is \textbf{good}.
+        \begin{itemize}
+            \item It helps to have an expert.
+        \end{itemize}
+        \item Beautiful formatting is \textbf{good}.
+        \begin{itemize}
+            \item Make use of templates and packages.
+            \item It's not AAAI or IEEE, but there's a \href{https://www.ctan.org/pkg/mcmthesis}{\verb|mcmthesis}
+        \end{itemize}
+        \item Graphs are \textbf{good}.
+        \begin{itemize}
+            \item Think twice, though.
+        \end{itemize}
+        \item Teamwork is the \textbf{best}.
+        \begin{itemize}
+            \item Everyone should contribute. Everyone.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Takeaway Points}
+    \begin{itemize}
+        \item \textbf{Be diverse.} Why not try it out?
+        \begin{itemize}
+            \item ARIMA, GM, MLP, CAPM, LinProg, AHP......
+        \end{itemize}
+        \item \textbf{Be structured.} Feel good about your product.
+        \begin{itemize}
+            \item Prediction + Decision
+        \end{itemize}
+        \item \textbf{Be specific.} Your model doesn't work for all.
+        \begin{itemize}
+            \item Long/short term, \#sample, etc.
+        \end{itemize}
+        \item \textbf{Be considerate.} Mind the details.
+        \begin{itemize}
+            \item e.g. What data will we have \textit{in the future}?
+        \end{itemize}
+        \item \textbf{Be creative.} Think more and stand out.
+        \begin{itemize}
+            \item ``Eyesight'' and ``risk tolerance'' in our case
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Additional Resources}
+    \href{https://github.com/AllenHeartcore/MCM2022_2214713}{\verb|https://github.com/AllenHeartcore/MCM2022\_2214713}
+\end{frame}
+
+
+\end{document}

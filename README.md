@@ -1,5 +1,9 @@
 # 2022年美国数学建模竞赛 - Team 2214713
 
+### [**2023.2.10 ZJUI美赛经验线上分享会材料**](resources/230210_MCM2022_Experience_ziyuan_zhirong.pdf)
+
+<br>
+
 ## **成员**
 
 ZJUI 2020级电子与计算机工程 **陈梓源** CHEN Ziyuan
